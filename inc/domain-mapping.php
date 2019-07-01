@@ -16,7 +16,7 @@ function rocket_parse_url_domain_mapping( $url ) {
 	if ( false === strpos( $domain_mapping_siteurl_host, $original_siteurl_host ) ) {
 		$url['host'] = str_replace( $original_siteurl_host, $domain_mapping_siteurl_host, $url['host'] );
 	}
-
+//TEST
 	return $url;
 }
 add_filter( 'rocket_parse_url', 'rocket_parse_url_domain_mapping' );
